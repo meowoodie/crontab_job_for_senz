@@ -1,0 +1,18 @@
+# Computing of users' events
+#0 10 * * * sh /root/crontab_job_for_senz/curl_advanced_event.sh "06:00:00" "10:00:00"
+#0 14 * * * sh /root/crontab_job_for_senz/curl_advanced_event.sh "06:00:00" "14:00:00"
+#0 18 * * * sh /root/crontab_job_for_senz/curl_advanced_event.sh "06:00:00" "18:00:00"
+#0 22 * * * sh /root/crontab_job_for_senz/curl_advanced_event.sh "06:00:00" "22:00:00"
+
+# Increase freq of collecting data:
+#0 6 * * * sh /root/crontab_job_for_senz/curl_decrease_freq.sh
+#0 7 * * * sh /root/crontab_job_for_senz/curl_increase_freq.sh
+#0 9 * * * sh /root/crontab_job_for_senz/curl_decrease_freq.sh
+#0 11 * * * sh /root/crontab_job_for_senz/curl_increase_freq.sh
+#0 13 * * * sh /root/crontab_job_for_senz/curl_decrease_freq.sh
+#0 16 * * * sh /root/crontab_job_for_senz/curl_increase_freq.sh
+#0 20 * * * sh /root/crontab_job_for_senz/curl_decrease_freq.sh
+
+# Parserhub SpiderUtils
+0 18 * * * sh /root/senz.app.parserhub/crawl_damai.sh
+0 22 * * * sh /root/senz.app.parserhub/crawl_douban.sh
