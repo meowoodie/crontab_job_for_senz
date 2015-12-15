@@ -14,5 +14,8 @@
 #0 20 * * * sh /root/crontab_job_for_senz/curl_decrease_freq.sh
 
 # Parserhub SpiderUtils
-0 18 * * * sh /root/senz.app.parserhub/crawl_damai.sh
-0 22 * * * sh /root/senz.app.parserhub/crawl_douban.sh
+# parserhub SpiderUtils
+0 18 * * * sh /root/crontab_job_for_senz/curl_start_crawl_damai.sh
+0 22 * * * sh /root/crontab_job_for_senz/curl_start_crawl_douban.sh
+0 * * * * sh /root/crontab_job_for_senz/curl_start_mapping_activity.sh
+0 * * * * sh /root/crontab_job_for_senz/curl_start_crftagging.sh 
