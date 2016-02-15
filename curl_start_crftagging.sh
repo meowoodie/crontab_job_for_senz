@@ -1,1 +1,1 @@
-curl -i http://123.57.5.45:9528/start_tagging
+curl -i http://119.254.111.40:9528/start_tagging

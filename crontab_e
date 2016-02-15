@@ -15,7 +15,7 @@
 
 # Parserhub SpiderUtils
 # parserhub SpiderUtils
-0 18 * * * sh /root/crontab_job_for_senz/curl_start_crawl_damai.sh
-0 22 * * * sh /root/crontab_job_for_senz/curl_start_crawl_douban.sh
-0 * * * * sh /root/crontab_job_for_senz/curl_start_mapping_activity.sh
-0 * * * * sh /root/crontab_job_for_senz/curl_start_crftagging.sh 
+0 * * * * sh /home/jiawei/senz.config.crontab/curl_start_crftagging.sh
+20 */12 * * * sh /home/jiawei/senz.config.crontab/curl_start_offline_crftagging.sh
+30 * * * * sh /home/jiawei/senz.config.crontab/curl_start_timeline_processing.sh
+50 */6 * * * sh /home/jiawei/senz.config.crontab/curl_start_timeline_offline_processing.sh
